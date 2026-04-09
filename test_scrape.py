@@ -12,7 +12,7 @@ class MetaParser(HTMLParser):
             if attrs_dict.get("property") == "og:image" or attrs_dict.get("name") == "twitter:image":
                 self.og_image = attrs_dict.get("content")
 
-url = "https://1drv.ms/i/c/1bcf807d12f8740a/IQBGCGfhukmfQ4kuzZTM8Cj7AVkC4goPuyrKrWThAndEZAU"
+url = "https://1drv.ms/i/c/placeholder/example"
 req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/119.0 Safari/537.36'})
 try:
     with urllib.request.urlopen(req) as response:
